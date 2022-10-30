@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build app'
+            }
+        }
+        stage('Green') {
+            steps {
+                echo 'move code to green ENV'
+            }
+        }
+        stage('Blue') {
+            steps {
+                echo 'move code to Blue ENV'
+            }
+        }
+        stage('PROD') {
+            steps {
+                echo 'move code to Production ENV'
+            }
+        }
+    }
+}
