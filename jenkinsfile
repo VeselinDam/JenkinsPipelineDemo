@@ -35,7 +35,17 @@ properties([
         string(
                 defaultValue: 'master',
                 description: 'Add test group/s to run. (webSmoke, master, header, promotionBanners, etc.)',
-                name: 'includeGroups')
+                name: 'includeGroups'),
+        gitParameter(
+                branch: '', 
+                branchFilter: '.*', 
+                defaultValue: 'master', 
+                name: 'branch', 
+                quickFilterEnabled: false, 
+                selectedValue: 'NONE', 
+                sortMode: 'NONE', 
+                tagFilter: '*', 
+                type: 'GitParameterDefinition')
                 ])
             ])
 node{
