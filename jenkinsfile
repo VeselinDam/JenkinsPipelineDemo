@@ -35,7 +35,11 @@ properties([
         string(
                 defaultValue: 'master',
                 description: 'Add test group/s to run. (webSmoke, master, header, promotionBanners, etc.)',
-                name: 'includeGroups')
+                name: 'includeGroups'),
+                string(
+                defaultValue: 'master',
+                description: 'Add test group/s to run. (webSmoke, master, header, promotionBanners, etc.)',
+                name: 'includeGroups22')
                 ])
             ])
 node{
