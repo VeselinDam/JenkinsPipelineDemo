@@ -23,7 +23,7 @@ properties([
                 name: 'branch'
                 ),
         choice(
-                choices: ['Chrome', 'Firefox'],
+                choices: ['Chrome1', 'Firefox'],
                 description: 'select browser',
                 name: 'browser'
                 ),
