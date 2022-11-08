@@ -36,6 +36,7 @@ properties([
                 defaultValue: 'master',
                 description: 'Add test group/s to run. (webSmoke, master, header, promotionBanners, etc.)',
                 name: 'includeGroups'),
+        if(portal.equals(\'novas'\){
         gitParameter(
                 branch: '', 
                 branchFilter: '.*', 
