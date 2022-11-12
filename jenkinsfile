@@ -3,13 +3,13 @@ properties([
         $class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', 
         description: 'Select portal to run tests on.', filterLength: 1, filterable: false, 
         name: 'portal', randomName: 'choice-parameter-1983807172516', 
-            script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: false, 
+            script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: true, 
                 script: 
                     'return[\'novas\', \'n1\', \'sk1\']']]], 
             [$class: 'CascadeChoiceParameter', choiceType: 'PT_SINGLE_SELECT', 
                 description: 'Portal environment URL for testing. (f.e. https://n1.int-green.ug.cdn.united.cloud/)', filterLength: 1, filterable: false, 
                 name: 'environment', randomName: 'choice-parameter-1983810005781', referencedParameters: 'portal', 
-                script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: false, 
+                script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: true, 
                     script: '''if(portal.equals(\'novas\')){
                                 return[
                                 \'https://novas.int-green.ug.cdn.united.cloud/\',
