@@ -49,7 +49,7 @@ properties([
                 type: 'GitParameterDefinition')])])
 node{
     stage("DEV ENV"){
-        if("${params.portal}" == "N1"){
+        if("${params.portal}" == "n1"){
             echo 'trenutno nije moguce pokrenuti testove na ovom portalu.'
                  currentBuild.result = "FAILURE"
                  stage.result = 'FAILURE'
