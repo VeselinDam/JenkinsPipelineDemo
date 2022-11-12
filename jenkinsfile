@@ -1,9 +1,9 @@
-properties([
 environment{
         NOVAS_GREEN = 'https://novas.int-green.ug.cdn.united.cloud/'
         N1_GREEN = 'https://n1.int-green.ug.cdn.united.cloud/'
         SK_GREEN = 'https://sk.int-green.ug.cdn.united.cloud/'
     }
+properties([
     parameters([[
         $class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', 
         description: 'Select portal to run tests on.', filterLength: 1, filterable: false, 
