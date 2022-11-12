@@ -22,7 +22,7 @@ properties([
                         if(portal.equals(\'n1\')){
                             return[
                                 \'https://novas.int-green.ug.cdn.united.cloud/:disabled\',
-                                \'${N1_GREEN}\',
+                                \'https://n1.int-green.ug.cdn.united.clou/\',
                                 \'https://sk.int-green.ug.cdn.united.cloud/:disabled\']  
                         }
                          if(portal.equals(\'sk\')){
