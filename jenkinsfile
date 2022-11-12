@@ -51,8 +51,8 @@ node{
     stage("DEV ENV"){
         if("${params.portal}" == "N1"){
             echo 'trenutno nije moguce pokrenuti testove na ovom portalu.'
-                // currentBuild.result = "FAILURE"
-                // stage.result = 'FAILURE'
+                 currentBuild.result = "FAILURE"
+                 stage.result = 'FAILURE'
         }
     }
 }
