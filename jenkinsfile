@@ -15,14 +15,14 @@ properties([
                 script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: false, 
                     script: '''if(portal.equals(\'novas\')){
                                 return[
-                                '${NOVAS_GREEN}',
+                                \'${NOVAS_GREEN}\',
                                 \'https://n1.int-green.ug.cdn.united.cloud/:disabled\',
                                 \'https://sk.int-green.ug.cdn.united.cloud/:disabled\']  
                         }
                         if(portal.equals(\'n1\')){
                             return[
                                 \'https://novas.int-green.ug.cdn.united.cloud/:disabled\',
-                                '${N1_GREEN}',
+                                \'${N1_GREEN}\',
                                 \'https://sk.int-green.ug.cdn.united.cloud/:disabled\']  
                         }
                          if(portal.equals(\'sk\')){
