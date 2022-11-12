@@ -13,7 +13,7 @@ properties([
                 script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: true, 
                     script: '''if(portal.equals(\'novas\')){
                                 return[
-                                '${novas_green}',
+                                \'${novas_green}\',
                                 \'https://n1.int-green.ug.cdn.united.cloud/:disabled\',
                                 \'https://sk.int-green.ug.cdn.united.cloud/:disabled\']  
                         }
