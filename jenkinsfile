@@ -1,3 +1,4 @@
+def novas_green = "https://novas.int-green.ug.cdn.united.cloud/"
 properties([
     parameters([[
         $class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', 
@@ -12,7 +13,7 @@ properties([
                 script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: false, script: ''], script: [classpath: [], oldScript: '', sandbox: true, 
                     script: '''if(portal.equals(\'novas\')){
                                 return[
-                                \'https://novas.int-green.ug.cdn.united.cloud/\',
+                                \'${novas_green}\',
                                 \'https://n1.int-green.ug.cdn.united.cloud/:disabled\',
                                 \'https://sk.int-green.ug.cdn.united.cloud/:disabled\']  
                         }
