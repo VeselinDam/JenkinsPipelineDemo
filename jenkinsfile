@@ -24,7 +24,7 @@ environment{
                         if(portal.equals(\'n1\')){
                             return[
                                 \'https://novas.int-green.ug.cdn.united.cloud/:disabled\',
-                                \'https://n1.int-green.ug.cdn.united.cloud/\',
+                                '${N1_GREEN}',
                                 \'https://sk.int-green.ug.cdn.united.cloud/:disabled\']  
                         }
                          if(portal.equals(\'sk\')){
